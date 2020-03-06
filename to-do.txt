@@ -1,0 +1,13 @@
+
+BUSQUEDAS
+- buscar por rangos de precio
+
+PERFIL USUARIO
+- meter de la base de datos
+- mostras compras del usuario
+
+COMPRAS
+- comprar producto (añadirlo a compras)
+
+BACKOFFICE
+- crud para admin
