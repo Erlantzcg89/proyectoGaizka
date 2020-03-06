@@ -11,3 +11,7 @@ COMPRAS
 
 BACKOFFICE
 - crud para admin
+
+JAVASCRIPT
+- reloj
+- cosas de javascript
