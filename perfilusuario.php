@@ -50,6 +50,8 @@ if (isset($_SESSION["nombre"])) {
 
 	$sql = "SELECT * FROM productos";
 
+	// SELECT * FROM mytable WHERE column1 LIKE '%word1%'
+
 	$productos = mysqli_query($conexion, $sql);
 
 	echo "<table>";
