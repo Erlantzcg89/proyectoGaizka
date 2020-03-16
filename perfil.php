@@ -270,7 +270,15 @@ if (isset($_SESSION['nombre'])) {
             
             //update aqui
 
-            
+            $sql = "UPDATE usuarios SET dinero=dinero+" . $ingresar . " WHERE nombre='" . $_SESSION['nombre'] . "'";
+
+            if ($conexion->query($sql) === TRUE) {
+                echo "Dinero ingresado con éxito<br><br>";
+            } else {
+                 echo "Error al ingresar la pasta" . $conexion->error;
+            }
+
+
 
 		} // si llega ingreso
 
