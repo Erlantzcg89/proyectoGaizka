@@ -201,7 +201,9 @@ if (isset($_SESSION['nombre'])) {
 			<p>Total gastado: 120 euros</p>
 		</div>
 	</div>
-	<?php
+    
+
+    <?php
 
 
 
@@ -254,7 +256,7 @@ if (isset($_SESSION['nombre'])) {
 	} else {
 
 		//rellenar ficha de usuario
-	$sql="SELECT * FROM usuario WHERE nombre = '".$_SESSION['nombre']."'";
+	$sql="SELECT * FROM usuarios WHERE nombre = '".$_SESSION['nombre']."'";
 
 	$consulta = mysqli_query($conexion, $sql);
     $row = mysqli_fetch_assoc($consulta);
@@ -263,6 +265,14 @@ if (isset($_SESSION['nombre'])) {
 
 		// si sesion si esta logueada 
 
+        if (!empty($_POST["ingresar"])) {
+            $ingresar = $_POST["igresar"];
+            
+            //update aqui
+
+            
+
+		} // si llega ingreso
 
 
 
